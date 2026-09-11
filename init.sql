@@ -43,12 +43,10 @@ CREATE TABLE if NOT EXISTS Fabricators (
     biome_id int NOT NULL REFERENCES Biomes(id), -- Foreign key to Biomes table (for biome fabricator is in)
     fabricator_type varchar(30) NOT NULL, -- Type of fabricator (e.g., smelter, assembler, etc.)
     efficiency int NOT NULL, -- Efficiency value used in resource yield calculations
-    amount_consumed float NOT NULL, -- Amount of material or resource consumed by the fabricator
-    amount_produced float NOT NULL, -- Amount of product or material produced by the fabricator
-    amount_byproduced float, -- Amount of byproduct produced by the fabricator
     amount_stored float NOT NULL DEFAULT 0, -- Amount of material or products currently stored in the fabricator (products will be natural numbers)
     product varchar(30) NOT NULL, -- Type of material or product being produced by the fabricator
     byproduct varchar(30) -- Type of byproduct being produced by the fabricator (can be NULL if no byproduct is produced)
+
 );
 
 -- RELATIONAL TABLES 
@@ -57,7 +55,7 @@ CREATE TABLE if NOT EXISTS Recipes (
     name varchar(30) PRIMARY KEY,
     fabricator_type varchar(30) NOT NULL, -- Type of fabricator (e.g., smelter, assembler, etc.)
     input_materials array varchar(30), -- List of input materials required for the recipe
-    output_products array varchar(30), -- List of output products produced by the recipe
+    products array varchar(30), -- List of output products produced by the recipe
     byproducts array varchar(30) -- List of byproducts produced by the recipe (can be NULL if no byproducts are produced)
 );
 

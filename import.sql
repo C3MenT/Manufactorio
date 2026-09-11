@@ -1,4 +1,3 @@
-.mode ascii
 .separator "|"
 
 .import /Tables/biomes.tbl Biomes;

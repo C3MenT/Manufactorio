@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS Biomes;
+DROP TABLE IF EXISTS Resources;
+
+
 CREATE TABLE if NOT EXISTS Biomes (
     id int PRIMARY KEY,
     name varchar(50) UNIQUE, -- User given name, can be NULL
@@ -49,7 +53,24 @@ CREATE TABLE if NOT EXISTS Fabricators (
 
 );
 
--- RELATIONAL TABLES 
+-- JUNCTION TABLES 
+CREATE TABLE if NOT EXISTS Resource_Locations (
+    biome_id int NOT NULL REFERENCES Biomes(id), -- Foreign key to Biomes table (for biome resource is in)
+    resource_id int NOT NULL REFERENCES Resources(id), -- Foreign key to Resources table (for resource in biome)
+    PRIMARY KEY (biome_id, resource_id) -- Composite primary key to ensure uniqueness of biome-resource pairs
+);
+
+CREATE TABLE if NOT EXISTS Fabricator_Locations (
+    biome_id int NOT NULL REFERENCES Biomes(id), -- Foreign key to Biomes table (for biome fabricator is in)
+    fabricator_id int NOT NULL REFERENCES Fabricators(id), -- Foreign key to Fabricators table (for fabricator in biome)
+    PRIMARY KEY (biome_id, fabricator_id) -- Composite primary key to ensure uniqueness of biome-fabricator pairs
+);
+
+CREATE TABLE if NOT EXISTS Extractor_Locations (
+    biome_id int NOT NULL REFERENCES Biomes(id), -- Foreign key to Biomes table (for biome extractor is in)
+    extractor_id int NOT NULL REFERENCES Extractors(id), -- Foreign key to Extractors table (for extractor in biome)
+    PRIMARY KEY (biome_id, extractor_id) -- Composite primary key to ensure uniqueness of biome-extractor pairs
+);
 
 CREATE TABLE if NOT EXISTS Recipes (
     name varchar(30) PRIMARY KEY,
@@ -57,11 +78,4 @@ CREATE TABLE if NOT EXISTS Recipes (
     input_materials array varchar(30), -- List of input materials required for the recipe
     products array varchar(30), -- List of output products produced by the recipe
     byproducts array varchar(30) -- List of byproducts produced by the recipe (can be NULL if no byproducts are produced)
-);
-
-CREATE TABLE if NOT EXISTS Biome_Layouts (
-    biome_id int NOT NULL REFERENCES Biomes(id) PRIMARY KEY, -- Foreign key to Biomes table
-    resource_ids arrays int NOT NULL REFERENCES Resources(id), -- Foreign keys to Resources table
-    extractor_ids arrays int NOT NULL REFERENCES Extractors(id), -- Foreign keys to Extractors table
-    fabricator_ids arrays int NOT NULL REFERENCES Fabricators(id) -- Foreign keys to Fabricators
 );

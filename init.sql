@@ -1,6 +1,6 @@
 CREATE TABLE if NOT EXISTS Biomes (
     id int PRIMARY KEY,
-    name varchar(50), -- User given name, can be NULL
+    name varchar(50) UNIQUE, -- User given name, can be NULL
     biome_type varchar(50) NOT NULL, -- Type of biome (e.g., forest, desert, tundra)
     resources array varchar(30), -- List of resources available in the biome
     size int NOT NULL -- Size value used in resource yield calculations and max number of structures that can be built in the biome

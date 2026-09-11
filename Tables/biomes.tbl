@@ -1,1 +1,6 @@
-0|"Forest_01"|forest|["water","coal","iron_ore"]|6
+0|Forest_01|forest|[water, coal, iron_ore, wood]|6
+1|Forest_02|rain_forest|[water, coal, wood,cocoa]|8
+2|Desert_01|desert|[coal, oil, sand]|3
+3|Desert_02|desert_lagoon|[coal, oil, sand,water]|4
+4|Desert_03|desert_basin|[coal, oil]|2
+5|Mounains_01|rocky_mountains|[coal, iron_ores, gold_ore]|8

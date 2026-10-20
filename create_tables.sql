@@ -93,5 +93,3 @@ CREATE TABLE IF NOT EXISTS Market(
     value double NOT NULL DEFAULT 1.00, -- in dollars
     UNIQUE(manufacturer_key, buyer_key, item_key)
 );
-
--- A + BC = (A + B)(A + C)

@@ -1,7 +1,7 @@
 /* Entity Tables*/
-
 CREATE TABLE IF NOT EXISTS Biome(
     biome_key int PRIMARY KEY,
+
     type varchar(20) NOT NULL,
     size int DEFAULT 1,
     name varchar(20)
@@ -9,59 +9,79 @@ CREATE TABLE IF NOT EXISTS Biome(
 
 CREATE TABLE IF NOT EXISTS Deposit(
     deposit_key int PRIMARY KEY,
-    biome_key int NOT NULL FOREIGN KEY (Biome),
-    item_key NOT NULL FOREIGN KEY (Item),
-    purity float
+
+    biome_key int,
+    item_key NOT NULL,
+    purity float,
+
+    FOREIGN KEY (biome_key) REFERENCES Biome(biome_key),
+    FOREIGN KEY (item_key) REFERENCES Item(item_key)
 );
 
 CREATE TABLE IF NOT EXISTS Extractor(
     extractor_key int PRIMARY KEY,
+
     item_extracting VARCHAR(30),
     efficiency float DEFAULT 1.0
 );
 
 CREATE TABLE IF NOT EXISTS Constructor(
     constructor_key int PRIMARY KEY,
+
     efficiency float DEFAULT 1.0
 );
 
 CREATE TABLE IF NOT EXISTS Item(
     item_key int PRIMARY KEY,
+
     name varchar(30) NOT NULL,
     quantity float DEFAULT 0.0
 );
 
 CREATE TABLE IF NOT EXISTS Ingredient(
     ingredient_key int PRIMARY KEY,
-    item_key int NOT NULL FOREIGN KEY (Item),
-    recipe_key int NOT NULL FOREIGN KEY (Recipe),
-    cost float NOT NULL,
-    UNIQUE(item_key, recipe_key, cost)
+
+    item_key int, -- Of item used in library of items
+    recipe_key int, -- Of recipe this is respective to
+    cost float DEFAULT 0.0,
+
+    UNIQUE(item_key, recipe_key, cost),
+
+    FOREIGN KEY (item_key) REFERENCES Item(item_key),
+    FOREIGN KEY (recipe_key) REFERENCES Recipe(recipe_key)
 );
 
 CREATE TABLE IF NOT EXISTS Product(
     product_key int PRIMARY KEY,
-    item_key int NOT NULL FOREIGN KEY (Item),
-    recipe_key int NOT NULL FOREIGN KEY (Recipe),
+
+    item_key int,
+    recipe_key int,
     base_yield float DEFAULT 0.0,
-    UNIQUE(item_key, recipe_key, cost)
+
+    UNIQUE(item_key, recipe_key, base_yield),
+    FOREIGN KEY (item_key) REFERENCES Item(item_key),
+    FOREIGN KEY (recipe_key) REFERENCES Recipe(recipe_key)
 );
 
--- Each tuple corresponds to an input
 CREATE TABLE IF NOT EXISTS Recipe(
     recipe_key int PRIMARY KEY,
-    ingredient_key int NOT NULL FOREIGN KEY (Ingredient),
-    product_key int NOT NULL FOREIGN KEY (Product),
-    byproduct_key int FOREIGN KEY (Product), -- Null OK
+
+    product_key int,
+    byproduct_key int, -- Null OK
+
+    FOREIGN KEY (product_key) REFERENCES Product(product_key),
+    FOREIGN KEY (byproduct_key) REFERENCES Product(product_key)
 );
 
 CREATE TABLE IF NOT EXISTS Buyer(
     buyer_key int PRIMARY KEY,
+
     name varchar(30)
 );
 
 CREATE TABLE IF NOT EXISTS Manufacturer(
     manufacturer_key int PRIMARY KEY,
+
     name varchar(30) NOT NULL UNIQUE,
     money double DEFAULT 0.0,
     income_per_cycle double DEFAULT 0.0
@@ -71,25 +91,39 @@ CREATE TABLE IF NOT EXISTS Manufacturer(
 
 CREATE TABLE IF NOT EXISTS Extractions(
     extraction_key int PRIMARY KEY,
-    extractor_key int NOT NULL FOREIGN KEY (Extractor),
-    deposit_key int NOT NULL FOREIGN KEY (Deposit),
+
+    extractor_key int,
+    deposit_key int,
     amnt_per_cycle float,
-    UNIQUE(extractor_key, deposit_key)
+
+    UNIQUE(extractor_key, deposit_key),
+    FOREIGN KEY (extractor_key) REFERENCES Extractor(extractor_key),
+    FOREIGN KEY (deposit_key) REFERENCES Deposit(deposit_key)
 );
 
 CREATE TABLE IF NOT EXISTS Production(
     production_key int PRIMARY KEY,
-    constructor_key int NOT NULL FOREIGN KEY (Constructor),
-    recipe_id int NOT NULL FOREIGN KEY (Recipe),
+
+    constructor_key int,
+    recipe_key int,
     amnt_per_cycle float,
-    UNIQUE(constructor_key, recipe_id)
+
+    UNIQUE(constructor_key, recipe_key),
+    FOREIGN KEY (constructor_key) REFERENCES Constructor(constructor_key),
+    FOREIGN KEY (recipe_key) REFERENCES Recipe(recipe_key)
 );
 
 CREATE TABLE IF NOT EXISTS Market(
     transaction_key int PRIMARY KEY,
-    manufacturer_key int NOT NULL FOREIGN KEY (Manufacturer),
-    buyer_key int NOT NULL FOREIGN KEY (Buyer),
-    item_key int NOT NULL FOREIGN KEY (Item),
+
+    manufacturer_key int,
+    buyer_key int,
+    item_key int,
     value double NOT NULL DEFAULT 1.00, -- in dollars
-    UNIQUE(manufacturer_key, buyer_key, item_key)
+    amnt_bought int NOT NULL DEFAULT 1,
+
+    UNIQUE(manufacturer_key, buyer_key, item_key),
+    FOREIGN KEY (manufacturer_key) REFERENCES Manufacturer(manufacturer_key),
+    FOREIGN KEY (buyer_key) REFERENCES Buyer(buyer_key),
+    FOREIGN KEY (item_key) REFERENCES Item(constructor_key)
 );

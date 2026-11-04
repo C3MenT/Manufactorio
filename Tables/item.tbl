@@ -1,0 +1,50 @@
+--Metal Ores
+x|copper_ore|Natural copper ore|0.0
+x|iron_ore|Natural iron ore|0.0
+x|gold_ore|Natural gold ore|0.0
+x|tin_ore|Natural tin ore|0.0
+x|aluminum_ore|Natural aluminum ore|0.0
+x|zinc_ore|Natural zinc ore|0.0
+x|lead_ore|Natural lead ore|0.0
+x|silver_ore|Natural silver ore|0.0
+x|bismuth_ore|Natual bismuth ore|0.0
+x|lithium_ore|Natural lithium ore|0.0
+x|uranium_ore|Natural uranium ore|0.0
+x|tungsten_ore|Natural tungsten ore|0.0
+
+-- Refined Ores
+x|copper_ingot|Refined copper ingots from copper ore|0.0
+x|iron_ingot|Refined iron ingots from iron ore|0.0
+x|gold_ingot|Refined gold ingots from gold ore|0.0
+x|tin_ingot|Refined tin ingots from tin ore|0.0
+x|aluminum_ingot|Refined aluminum ingots from aluminum ore|0.0
+x|zinc_ingot|Refined zinc ingots from zinc ore|0.0
+x|lead_ingot|Refined lead ingots from lead ore|0.0
+x|silver_ingot|Refined silver ingots from silver ore|0.0
+x|bismmuth_ingot|Refined bismuth ingots from bismuth ore|0.0
+x|lithium|Refined lithium from lithium ore typically used for electric applications|0.0
+x|depleted_uranium|Depleted or average uranium requiring enrichment for nuclear application|0.0
+x|uranium|Ready or enriched uranium for nuclear application|0.0\
+x|tungsten_ingot|Refined tungsten from tungsten ore typically used for radiation shielding and ammunition applications|0.0
+
+-- Alloys
+x|bronze_ingot|Stronger metal ingot from alloyed copper and tin|0.0
+x|brass_ingot|Stronger metal ingot from alloyed copper and zinc|0.0
+x|steel_ingot|Stronger metal ingot from blasted coal and iron|0.0
+x|solder|Metal joining alloy from tin and lead|0.0
+x|sterling_silver|Stronger silver alloy from silver and copper usually for aesthetics|0.0
+x|pewter|A fancy tin-copper-bismuth alloy often used for decorative items|0.0
+x|||0.0
+
+-- Other 
+x|coal|Coal or solid fossil fuel|0.0
+x|clay|Clay material for ceramics and brick|0.0
+x|wood|Wood matter typically from a tree|0.0
+x|water|Water, literally|0.0
+x|oil|Crude oil or liquid fossil fuel|0.0
+x|sulphur|Sulphur that smells terrible but has a combustible quality|0.0
+x|quartz|General raw quartz which has a transparent appearance|0.0
+x|natural_gas|Natural gases extracted from below|0.0
+
+
+-- 

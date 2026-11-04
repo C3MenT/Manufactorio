@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS Biome(
 CREATE TABLE IF NOT EXISTS Deposit(
     deposit_key int PRIMARY KEY,
 
-    biome_key int,
+    biome_key int NOT NULL,
     item_key NOT NULL,
     purity float,
 
@@ -35,6 +35,7 @@ CREATE TABLE IF NOT EXISTS Item(
     item_key int PRIMARY KEY,
 
     name varchar(30) NOT NULL,
+    description varchar(200),
     quantity float DEFAULT 0.0
 );
 

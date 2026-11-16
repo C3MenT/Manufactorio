@@ -1,3 +1,7 @@
+/*
+Just the tables involved with the Crafting and Item system
+*/
+
 DROP TABLE IF EXISTS Item;
 CREATE TABLE IF NOT EXISTS Item(
     item_id varchar(30) PRIMARY KEY,

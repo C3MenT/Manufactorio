@@ -1,3 +1,7 @@
+/*
+Just the tables involved with the Biomes
+*/
+
 DROP TABLE IF EXISTS Biome;
 CREATE TABLE IF NOT EXISTS Biome(
     biome_key int PRIMARY KEY, -- unique identifier for this biome

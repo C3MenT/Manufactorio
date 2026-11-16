@@ -1,3 +1,7 @@
+/*
+Just the tables involved with the Manufacturing system
+*/
+
 DROP TABLE IF EXISTS Extractor;
 CREATE TABLE IF NOT EXISTS Extractor(
     extractor_key int PRIMARY KEY,

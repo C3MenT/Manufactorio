@@ -1,0 +1,20 @@
+1	Siphon Industries
+2	North Point Commerce
+3	First Trade Union
+4	Colla IV
+5	Federation Tech
+6	Ranger Supplies
+7	The United Human Front
+8	Bactoid & Drauger
+9	Ferry Traders
+10	The Galactic Express
+11	Anchorage
+12	Zues
+13	Hadron Collision
+14	Dark Tide
+15	Last Resort
+16	Undergarden
+17	Lost Ones
+18	AI Alliance
+19	Horizon Dawn
+20	Free Sale Society

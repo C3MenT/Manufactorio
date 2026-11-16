@@ -19,6 +19,8 @@
 -- 3. Item received tier (int) attribute
 -- 4. Referencial foreign keys have been added for most shared item_id instances
 -- 5. Deposit received a Unique constraint between deposit_id and biome_id
+-- 6. Constructor and Extractor recieved power_consumption (float) attribute
+-- 7. Extraction and Production relations lost amnt_per_cycle (float) attribute due to redundancy
 -- ============================================================================
 
 -- ============================================================================

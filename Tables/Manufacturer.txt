@@ -1,0 +1,10 @@
+1	Player	0	0
+2	Satisfactory Industries	0	0
+3	LAUNCH Technology	0	0
+4	Deep Rock	0	0
+5	Factorio Inc	0	0
+6	Mental Dream	0	0
+7	Greater Production	0	0
+8	Galactic Manufacturing Group	0	0
+9	CxZero	0	0
+10	Breath-first Industrial	0	0

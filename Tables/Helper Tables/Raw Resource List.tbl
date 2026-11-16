@@ -1,0 +1,31 @@
+Copper Ore	ore_copper	Solid	Natural copper ore	36
+Iron Ore	ore_iron	Solid	Natural iron ore	16
+Gold Ore	ore_gold	Solid	Natural gold ore	12
+Tin Ore	ore_tin	Solid	Natural tin ore	24
+Aluminum Ore	ore_aluminum	Solid	Natural aluminum ore	28
+Zinc Ore	ore_zinc	Solid	Natural zinc ore	24
+Lead Ore	ore_lead	Solid	Natural lead ore	20
+Silver Ore	ore_silver	Solid	Natural silver ore	16
+Bismuth Ore	ore_bismuth	Solid	Natural bismuth ore	28
+Lithium Ore	ore_lithium	Solid	Natural lithium ore	24
+Tungsten Ore	ore_tungsten	Solid	Natural tungsten ore	16
+Antimony Ore	ore_antimony	Solid	Natural antimony ore	16
+Titanium Ore	ore_titanium	Solid	Natural titanium ore	8
+Uranium Ore	ore_uranium	Solid	Natural uranium ore	6
+Plutonium Ore	ore_plutonium	Solid	Natural plutonium ore	6
+Cobalt Ore	ore_cobalt	Solid	Natural cobalt ore	12
+Wood	wood	Solid	General wood-classifiable material from a tree usually measured in logs	24
+Water	water	Liquid	It's water	30
+Coal	coal	Solid	Raw solid fossil fuel matter	36
+Sulphur	sulphur	Solid	Combustible matter with a foul odur	28
+Quartz	quartz	Solid	Crystaline transparent material used in silicon	16
+Crude Oil	crude_oil	Liquid	Raw liquid fossil fuel matter	24
+Nitrogen Gas	nitrogen_gas	Gas	Raw gasous nitrogen found from gysers	24
+Limestone	limestone	Solid	A type of rock material useful for cement	32
+Gravel	gravel	Solid	Coarse sediment collection	40
+Sand	sand	Solid	Fine sand from arid environments	40
+Foliage	foliage	Solid	General plant matter collected from plants and as a byproduct of forestry extractions	10
+Protein Matter	protein	Solid	General protein matter collected from slaughtered organisms	4
+Clay	clay	Solid	Clay mineral material	24
+Mycelia	mycelia	Solid	General mycelic material from fungi	12
+Bauxite Ore	ore_bauxite	Solid	Raw natural Bauxite	20

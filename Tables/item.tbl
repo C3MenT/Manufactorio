@@ -1,50 +1,193 @@
---Metal Ores
-x|copper_ore|Natural copper ore|0.0
-x|iron_ore|Natural iron ore|0.0
-x|gold_ore|Natural gold ore|0.0
-x|tin_ore|Natural tin ore|0.0
-x|aluminum_ore|Natural aluminum ore|0.0
-x|zinc_ore|Natural zinc ore|0.0
-x|lead_ore|Natural lead ore|0.0
-x|silver_ore|Natural silver ore|0.0
-x|bismuth_ore|Natual bismuth ore|0.0
-x|lithium_ore|Natural lithium ore|0.0
-x|uranium_ore|Natural uranium ore|0.0
-x|tungsten_ore|Natural tungsten ore|0.0
-
--- Refined Ores
-x|copper_ingot|Refined copper ingots from copper ore|0.0
-x|iron_ingot|Refined iron ingots from iron ore|0.0
-x|gold_ingot|Refined gold ingots from gold ore|0.0
-x|tin_ingot|Refined tin ingots from tin ore|0.0
-x|aluminum_ingot|Refined aluminum ingots from aluminum ore|0.0
-x|zinc_ingot|Refined zinc ingots from zinc ore|0.0
-x|lead_ingot|Refined lead ingots from lead ore|0.0
-x|silver_ingot|Refined silver ingots from silver ore|0.0
-x|bismmuth_ingot|Refined bismuth ingots from bismuth ore|0.0
-x|lithium|Refined lithium from lithium ore typically used for electric applications|0.0
-x|depleted_uranium|Depleted or average uranium requiring enrichment for nuclear application|0.0
-x|uranium|Ready or enriched uranium for nuclear application|0.0\
-x|tungsten_ingot|Refined tungsten from tungsten ore typically used for radiation shielding and ammunition applications|0.0
-
--- Alloys
-x|bronze_ingot|Stronger metal ingot from alloyed copper and tin|0.0
-x|brass_ingot|Stronger metal ingot from alloyed copper and zinc|0.0
-x|steel_ingot|Stronger metal ingot from blasted coal and iron|0.0
-x|solder|Metal joining alloy from tin and lead|0.0
-x|sterling_silver|Stronger silver alloy from silver and copper usually for aesthetics|0.0
-x|pewter|A fancy tin-copper-bismuth alloy often used for decorative items|0.0
-x|||0.0
-
--- Other 
-x|coal|Coal or solid fossil fuel|0.0
-x|clay|Clay material for ceramics and brick|0.0
-x|wood|Wood matter typically from a tree|0.0
-x|water|Water, literally|0.0
-x|oil|Crude oil or liquid fossil fuel|0.0
-x|sulphur|Sulphur that smells terrible but has a combustible quality|0.0
-x|quartz|General raw quartz which has a transparent appearance|0.0
-x|natural_gas|Natural gases extracted from below|0.0
-
-
--- 
+ore_copper	Copper Ore	Solid	Natural copper ore	0	0
+ore_iron	Iron Ore	Solid	Natural iron ore	0	0
+ore_gold	Gold Ore	Solid	Natural gold ore	0	0
+ore_tin	Tin Ore	Solid	Natural tin ore	0	0
+ore_aluminum	Aluminum Ore	Solid	Natural aluminum ore	0	0
+ore_zinc	Zinc Ore	Solid	Natural zinc ore	0	0
+ore_lead	Lead Ore	Solid	Natural lead ore	0	0
+ore_silver	Silver Ore	Solid	Natural silver ore	0	0
+ore_bismuth	Bismuth Ore	Solid	Natural bismuth ore	0	0
+ore_lithium	Lithium Ore	Solid	Natural lithium ore	0	0
+ore_tungsten	Tungsten Ore	Solid	Natural tungsten ore	0	0
+ore_antimony	Antimony Ore	Solid	Natural antimony ore	0	0
+ore_titanium	Titanium Ore	Solid	Natural titanium ore	0	0
+ore_uranium	Uranium Ore	Solid	Natural uranium ore	0	0
+ore_plutonium	Plutonium Ore	Solid	Natural plutonium ore	0	0
+ore_cobalt	Cobalt Ore	Solid	Natural cobalt ore	0	0
+wood	Wood	Solid	General wood-classifiable material from a tree usually measured in logs	0	0
+water	Water	Liquid	It's water	0	0
+coal	Coal	Solid	Raw solid fossil fuel matter	0	0
+sulphur	Sulphur	Solid	Combustible matter with a foul odur	0	0
+quartz	Quartz	Solid	Crystaline transparent material used in silicon	0	0
+crude_oil	Crude Oil	Liquid	Raw liquid fossil fuel matter	0	0
+nitrogen_gas	Nitrogen Gas	Gas	Raw gasous nitrogen found from gysers	0	0
+limestone	Limestone	Solid	A type of rock material useful for cement	0	0
+gravel	Gravel	Solid	Coarse sediment collection	0	0
+sand	Sand	Solid	Fine sand from arid environments	0	0
+foliage	Foliage	Solid	General plant matter collected from plants and as a byproduct of forestry extractions	0	0
+protein	Protein Matter	Solid	General protein matter collected from slaughtered organisms	0	0
+clay	Clay	Solid	Clay mineral material	0	0
+mycelia	Mycelia	Solid	General mycelic material from fungi	0	0
+ingot_copper	Copper Ingot	Solid	Smelted copper ore	1	0
+ingot_iron	Iron Ingot	Solid	Smelted iron ore	1	0
+ingot_gold	Gold Ingot	Solid	Smelted gold ore. Naturally valuable and conductive.	1	0
+ingot_tin	Tin Ingot	Solid	Smelted tin ore	1	0
+ingot_aluminum	Aluminum Ingot	Solid	Smelted aluminum ore	1	0
+ingot_zinc	Zinc Ingot	Solid	Smelted zinc ore	1	0
+ingot_lead	Lead Ingot	Solid	Smelted lead ore	1	0
+ingot_silver	Silver Ingot	Solid	Smelted sliver ore	1	0
+ingot_bismuth	Bismuth Ingot	Solid	Smelted bismuth ore	1	0
+ingot_lithium	Lithium Ingot	Solid	Smelted lithium ore	1	0
+ingot_tungsten	Tungsten Ingot	Solid	Smelted tungsten ore	1	0
+ingot_antimony	Antimony Ingot	Solid	Smelted antimony ore	1	0
+ingot_titanium	Titanium Ingot	Solid	Smelted titanium ore	1	0
+uranium_depleted	Depleted Uranium	Solid	Common un-enriched or non-fertile uranium. Requires enrichment for nuclear application.	1	0
+uranium_enriched	Enriched Uranium	Solid	Enriched ready to use uranium	1	0
+ingot_plutonium	Plutonium Ingot	Solid	Smelted plutonium, kept protected from the air.	1	0
+ingot_cobalt	Cobalt Ingot	Solid	Smelted cobalt ore	1	0
+wood_planks	Wood Planks	Solid	Cut and prepared wood	1	0
+wood_chips	Wood Chips	Solid	Wood stripped and broken down into smaller chips	1	0
+cement	Cement	Solid	Limestone burned to maintain its lime. Hydrallic material.	1	0
+glass	Glass	Solid	Sand heated into a glass material	1	0
+brick	Brick	Solid	Clay baked into a hardened construction-worthy form	1	0
+ceramic	Ceramic Material	Solid	Clay baked into a sturdier form for ceramic constructions	1	0
+polymer_resin	Polymer Resin	Solid	Raw durable synthetic material that can be hardened through heating	1	0
+plastic	Plastic	Solid	Synthetic and malluable material that can take many forms	1	0
+rubber	Rubber	Solid	Synthetic flexible material that can resist stress	1	0
+fuel	Fuel	Liquid	General purpose refined combustable fuel	1	0
+heavy_oil_residue	Heavy Oil Residue	Liquid	Heavy oil residuals created incidentally from manufactured material synthesis.	1	0
+nitric_acid	Nitric Acid	Liquid	Acid created as a result of nitrogen gas reacting with water	1	0
+quartz_crystal	Quartz Crystal	Solid	Quartz cleaned and refined to just its crystaline makeup	1	0
+silica	Silica	Solid	Intermediate base material on the level of plastic	1	0
+silica_dissolved	Dissolved Silica	Liquid	Liquid silica created using acid on quartz, produces pure quartz crystals as a byproduct	1	0
+biomass_solid	Solid Biomass	Solid	Compacted biomass from living organisms, natural energy source	1	0
+ingot_steel	Steel Ingot	Solid	Strong metallic iron and coal compound made through blasting.	2	0
+ingot_brass	Brass Ingot	Solid	A copper and zinc alloy.	2	0
+ingot_bronze	Bronze Ingot	Solid	A copper and tin alloy	2	0
+ingot_pewter	Pewter Ingot	Solid	A copper, tin, and bismuth alloy	2	0
+ingot_sterling_silver	Sterling Silver Ingot	Solid	A silver and copper alloy used for decorative objects.	2	0
+ingot_solder	Solder Ingot	Solid	A lead, tin, and antimony alloy.	2	0
+gallium	Gallium	Solid	A silvery metal not simply found naturally, but in trace amounts of zinc ore	2	0
+ingot_staballoy	Staballoy Ingot	Solid	A depleted uranium and titanium alloy often used for munitions	2	0
+plutonium_gallium	PlutoniumGallium	Solid	A plutonium and gallium alloy used in nuclear weapon pits	2	0
+steel_beam	Steel Beam	Solid	A foundational construction piece for sturdy creations	2	0
+steel_pipe	Steel Pipe	Solid	A steel pipe. A good sturdy weapon.	2	0
+steel_screw	Steel Screw	Solid	Steel scews for heavy duty binding	2	0
+steel_sheet	Steel Sheet	Solid	Steel rolled into stronger sheets	2	0
+concrete	Concrete	Liquid	Cement mixed with water.	2	0
+steel_beam_encased	Encased Steel Beam	Solid	A steel beam encased in solidified concrete	2	0
+copper_wire	Copper Wire	Solid	Copper wire used for electric circuit connections	2	0
+copper_sheet 	Copper Sheet	Solid	A rolled sheet of copper	2	0
+iron_screw	Iron Screw	Solid	A simple iron screw for binding	2	0
+iron_pipe	Iron Pipe	Solid	Pipes made of iron	2	0
+iron_sheet	Iron Sheet	Solid	Rolled sheet of iron	2	0
+iron_gear_small	Small Iron Gear	Solid	A "small" iron gear 	2	0
+iron_gear_medium	Medium Iron Gear	Solid	A "medium" sized iron gear	2	0
+iron_gear_large	Large Iron Gear	Solid	A "large" sized iron gear	2	0
+gold_fingers	Gold Fingers	Solid	Delicate connection prongs for use in circuits and boards	2	0
+gold_wire	Gold Wire	Solid	An expensive high-speed electrical wire for fast circuits	2	0
+light_bulb	Light Bulb	Solid	A bulb that produces light when powered	2	0
+glass_screen	Glass Screen	Solid	A glass screen of rectangular dimensions	2	0
+tungsten_sheet	Tungsten Sheet	Solid	Tungsten rolled into a sheet	2	0
+black_powder	Black Powder	Solid	Explosive powder substance constructed from sulphur coal combination	2	0
+wood_pulp	Wood Pulp	Liquid	Wood chips melted down and liquified	2	0
+tire_standard	Standard Tire	Solid	Tires for motor vehicles	2	0
+tire_heavy	Heavy Tire	Solid	Heavy-duty tires for heavy or large vehicles	2	0
+hubcap	Hubcap	Solid	Hubcap for vehicle wheels	2	0
+wheel_bearing	Wheel Bearing	Solid	A steel wheel core bearing for vehicle wheels	2	0
+wheel_bearing_strong	Strong Wheel Bearing	Solid	A heavy steel wheel core bearing for larger vehicle wheels	2	0
+wheel_rim	Wheel Rim	Solid	A steel wheel rim for vehicle wheels	2	0
+tread_belt	Tread Belt	Solid	A tread belt to run over the wheels of vehicles that run on treads	2	0
+aluminum_sheet	Aluminum Sheet	Solid	A rolled sheet of aluminum not for cooking	2	0
+aluminum_casing	Aluminum Casing	Solid	An aluminum encasing structure for housing items	2	0
+machine_frame	Machine Frame	Solid	A metal frame for machnical constructs	3	0
+machine_frame_heavy	Heavy Machine Frame	Solid	A heavyduty machine frame for strong mechanical constructs	3	0
+rotor_light	Light Rotor	Solid	A simple mechanical rotor for things that need a rotor	3	0
+rotor_heavy	Heavy Rotor	Solid	A heavier mechanical rotor for strong mechanical machines	3	0
+stator_light	Light Stator	Solid	A light stator for use in basic motorized mechanics	3	0
+stator_heavy	Heavy Stator	Solid	A heavier stator for use in advanced motorized constructs	3	0
+cable	Cable	Solid	An insulated wire for electrical equipment	3	0
+circuit_board	Circuit Board	Solid	A circuit board for housing logic circuits	3	0
+high_speed_connector	High Speed Connector	Solid	An advanced circuit board for use in computing applications	3	0
+electrical_display	Electrical Display	Solid	An electrical display for user-machine interactions	3	0
+smokeless_powder	Smokeless Powder	Solid	Highly combustible synthetic powder for use in controlled and powerful detonations	3	0
+paper	Paper	Solid	Synthetic soft rolled fiber crafted from solidified wood pulp.	3	0
+bullet_core	Bullet Core	Solid	Soft core for smallarms ballistics that preserves jacket integrity	3	0
+bullet_jacket_copper	Copper Bullet Jacket	Solid	A traditional copper jacket for small arms ammunition	3	0
+bullet_jacket_steel	Steel Bullet Jacket	Solid	A stronger and more expensive jacket for small arms ammunition	3	0
+bullet_jacket_tungsten	Tungsten Bullet Jacket	Solid	A strongest and more expensive jacket for small arms ammunition	3	0
+ballistic_tip	Ballistic Tip	Solid	A soft tip to improve ballistic performance of hollowpoint ammunition	3	0
+percussion_cap	Percussion Cap	Solid	An encased explosive propellant or primer for small arms ammunition	3	0
+pellet_lead	Lead Pellet	Solid	Lead pellet shot or payload for a shotgun shell	3	0
+pellet_steel	Steel Pellet	Solid	Steel pellet shot or payload for a shotgun shell	3	0
+pellet_tungsten	Tungsten Pellet	Solid	Tungsten pellet shot or payload for a shotgun shell	3	0
+pellet_bismuth	Bismuth Pellet	Solid	Bismuth pellet shot or payload for a shotgun shell	3	0
+pellet_rubber	Rubber Pellet	Soliid	Rubber non-lethal shot or payload for nonlethal shotgun shells	3	0
+slug_lead	Lead Slug	Solid	Lead shotgun slugs for slug rounds	3	0
+slug_steel	Steel Slug	Solid	Steel shotgun slugs for slug rounds	3	0
+slug_tungsten	Tungsten Slug	Solid	Tungsten shotgun slugs for slug rounds	3	0
+shotshell_tube	Shotshell Tube	Solid	Paper or plastic tube for holding shotgun shot	3	0
+vehicle_wheel_standard	Vehicle Wheel Standard	Solid	A standard vehicle wheel to put on a simple commercial vehicle	3	0
+vehicle_wheel_heavy	Vehicle Wheel Heavy	Solid	A large heavy vehicle wheel to put on a powerful stronger vehicles	3	0
+vehicle_tread	Vehicle Tread	Solid	Belt treads for heavy treaded vehicles to propel themselves with	3	0
+cyrstal_oscillator	Crystal Oscillator	Solid	An oscillating contraption utilizing quartz crystals	3	0
+computer	Computer	Solid	A mechanical module that can make decisions in logical circuits depending on input values	4	0
+ram	RAM	Solid	Random access memory for more independent computing	4	0
+hard_drive	Hard Drive	Solid	A physical long-term memory for personal computers and logical devices that hold data	4	0
+motor_light	Light Motor	Solid	A basic motor	4	0
+motor_heavy	Heavy Motor	Solid	A heavy-duty motor 	4	0
+smart_plating	Smart Plating	Solid	Smart plating for complex machines	4	0
+modular_engine	Modular Engine	Solid	A modular engine for self-propeling machines	4	0
+round_fmj_cheap	Cheap FMJ Round	Solid	A basic full metal jacket small arms round	4	0
+round_hp_cheap	Cheap HP Round	Solid	A basic hollowpoint small arms round	4	0
+round_sp_cheap	Cheap SP Round	Solid	A basic soft point small arms round used for better ballistics with softer targets	4	0
+round_fmj_light	Light FMJ Round	Solid	A basic full metal jacket small arms round	4	0
+round_hp_light	Light HP Round	Solid	A basic hollowpoint small arms round	4	0
+round_sp_light	Light SP Round	Solid	A basic soft point small arms round used for better ballistics with softer targets	4	0
+round_fmj_heavy	Heavy FMJ Round	Solid	A heavy full metal jacket small arms round	4	0
+round_hp_heavy	Heavy HP Round	Solid	A heavy hollowpoint small arms round	4	0
+round_sp_heavy	Heavy SP Round	Solid	A heavy soft point small arms round used for better ballistics with softer targets	4	0
+round_buckshot_cheap	Cheap Buckshot Round	Solid	A cheap smallarms buckshot shotgun shell	4	0
+round_buckshot_light	Light Buckshot Round	Solid	A standard light smallarms buckshot shotgun shell	4	0
+round_buckshot_heavy	Heavy Buckshot Round	Solid	A heavy smallarms buckshot shotgun shell	4	0
+round_slug_cheap	Cheap Slug Round	Solid	A cheap smallarms slug shotgun round	4	0
+round_slug_light	Light Slug Round	Solid	A standard light smallarms slug shotgun round	4	0
+round_slug_heavy	Heavy Slug Round	Solid	A heavy smallarms slug shotgun round	4	0
+plastic_explosive	Plastic Explosive	Solid	An electronically triggerable explosive device	4	0
+vehicle_frame_car	Car Vehicle Frame	Solid	The framework of a standard car	4	0
+vehicle_frame_truck	Truck Vehicle Frame	Solid	The framework of a standard truck	4	0
+vehicle_frame_van	Van Vehicle Frame	Solid	The framework of a standard van	4	0
+vehicle_frame_apc	APC Vehicle Frame	Solid	The framework of an APC 	4	0
+vehicle_frame_tank	Tank Vehicle Frame	Solid	The framework of a generic tank	4	0
+vehicle_body_car	Car Vehicle Body	Solid	The outer body of a generic car	4	0
+vehicle_body_truck	Truck Vehicle Body	Solid	The outer body of a generic truck	4	0
+vehicle_body_van	Van Vehicle Body	Solid	The outer body of a generic van	4	0
+vehicle_body_apc	APC Vehicle Body	Solid	The outer armor of an APC	4	0
+vehicle_body_tank	Tank Vehicle Body	Solid	The outer armor of a tank	4	0
+underbody_4_wheel	4-Wheel Underbody	Solid	The underbody of a 4-wheel vehicle	4	0
+underbody_6_wheel	6-Wheel Underbody	Solid	The underbody of a 6-wheel vehicle	4	0
+underbody_12_wheel	12-Wheel Underbody	Solid	The underbody of a 12-wheel vehicle	4	0
+rotating_turret	Rotating Turret	Solid	A rotating armored turret for placing on a vehicle or emplacement	4	0
+radio_control_unit	Radio Control Unit	Solid	A radio control unit for logistical conducting	4	0
+flood_light	Flood Light	Solid	A large light fixture for outdoor usage	4	0
+personal_computer	Personal Computer	Solid	A personal computer for human use	5	0
+magazine_fmj_cheap	Cheap FMJ Magazine	Solid	A small arms magazine of 20 cheap FMJ rounds	5	0
+magazine_hp_cheap	Cheap HP Magazine	Solid	A small arms magazine of 20 cheap HP rounds	5	0
+magazine_sp_cheap	Cheap SP Magazine	Solid	A small arms magazine of 20 cheap SP rounds	5	0
+magazine_fmj_light	Light FMJ Magazine	Solid	A small arms magazine of 20 light FMJ rounds	5	0
+magazine_hp_light	Light HP Magazine	Solid	A small arms magazine of 20 light FMJ rounds	5	0
+magazine_sp_light	Light SP Magazine	Solid	A small arms magazine of 20 light FMJ rounds	5	0
+magazine_fmj_heavy	Heavy FMJ Magazine	Solid	A small arms magazine of 20 heavy FMJ rounds	5	0
+magazine_hp_heavy	Heavy HP Magazine	Solid	A small arms magazine of 20 heavy FMJ rounds	5	0
+magazine_sp_heavy	Heavy SP Magazine	Solid	A small arms magazine of 20 heavy FMJ rounds	5	0
+vehicle_car	Car	Solid	A commercial car	5	0
+vehicle_truck	Truck	Solid	A commercial truck	5	0
+vehicle_van	Van	Solid	A commerical van	5	0
+vehicle_apc	Combat APC	Solid	A militant APC	5	0
+vehicle_tank	Combat Tank	Solid	A militant armored tank	5	0
+radar_tower	Radar Tower	Solid	A large scale radar tower for environmental monitoring	5	0
+billboard	Billboard	Solid	A large electrical display for placing outdoors	5	0
+ore_bauxite	Bauxite Ore	Solid	Raw natural Bauxite	0	0
+bauxite	Bauxite	Solid	Smelted bauxite	1	0
+alumina_solution	Alumina Solution	Liquid	A solution produced from broken down bauxite with water	2	0
+slug_bismuth	Bismuth Slug	Solid	Bismuth shotgun slugs for slug rounds	3	0

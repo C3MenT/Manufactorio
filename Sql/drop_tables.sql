@@ -10,7 +10,6 @@ DROP TABLE IF EXISTS Buyer;
 DROP TABLE IF EXISTS Manufacturer;
 
 /* Junction Tables */
-
 DROP TABLE IF EXISTS Extractions;
 DROP TABLE IF EXISTS Production;
 DROP TABLE IF EXISTS Market;

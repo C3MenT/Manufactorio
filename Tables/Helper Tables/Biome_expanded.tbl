@@ -1,0 +1,101 @@
+0	forest	6	Forest
+1	forest	8	Rain Forest
+2	desert	3	Desert
+3	desert	4	Desert Lagoon
+4	desert	2	Desert Basin
+5	mountain	8	Rocky Mountains
+6	savanna	7	Savanna
+7	ocean	9	Ocean
+8	meadow	4	Meadow
+9	plains	5	Plains
+10	alpine	7	Alpine Forest
+11	jungle	12	Jungle
+12	forest	2	Redwood Forest
+13	tundra	9	Artic Tundra
+14	swamp	7	Mushroom Bog
+15	swamp	12	Swamp
+16	volcano	5	Caldera
+17	volcano	2	Small Volcano
+18	hot_spring	4	Hot Spring
+19	oil_field	2	Petroleum Reservoir
+20	forest	6	Bamboo Forest
+21	mountain	4	Bluff Peaks
+22	mountain	3	Sheer Cliffs
+23	oil_field	6	Tar Pits
+24	ocean	8	Cold Ocean
+25	alpine	5	Frosted Hills
+26	lake	2	Crystal Lake
+27	lake	3	Muck Lake
+28	wasteland	9	Irradiated Plains
+29	wasteland	12	Old Battlefield
+30	ruins	8	Ruined Factory
+31	ruins	10	Ancient City
+32	ruins	4	Exposed Ruins
+33	ruins	7	Abandoned Construction
+34	forest	6	Maple Forest
+35	tundra	5	Red Tundra
+36	corruption	7	Corrupted Valley
+37	corruption	5	Vicera Forest
+38	corruption	4	Corrupted Ruins
+39	anomaly	1	Dimensional Rift
+40	ocean	2	Electric Ocean
+41	forest	3	Root Tangle
+42	ruins	4	Precursor Superdevice
+43	plains	2	Wheet Field
+44	plains	8	Orange Plains
+45	meadow	5	Rose Meadow
+46	meadow	3	Glowing Meadow
+47	swamp	8	Temperate Swamp
+48	jungle	4	Wild Jungle
+49	anomaly	3	Breathing Mountains
+50	mountain	5	Zen Peaks
+51	ocean	9	Whispering Tide
+52	oil_field	2	Black Gold Flats
+53	tundra	8	Icewind Flats
+54	oil_field	10	Derrick Plain
+55	mountain	9	Frostspine
+56	wasteland	2	Rust Barrens
+57	wasteland	7	Deadlands
+58	desert	1	Glass Desert
+59	ruins	8	Sunken Complex
+60	hot_spring	3	Boiling Springs
+61	jungle	4	Emerald Canopy
+62	volcano	5	Ashen Crater
+63	ruins	1	Broken Spire
+64	ruins	2	Shattered Citadel
+65	meadow	4	Sunlit Pasture
+66	plains	1	Thistle Flats
+67	desert	9	Red Mesa
+68	corruption	9	Warped Thicket
+69	jungle	10	Misty Canopy
+70	lake	10	Stillwater Basin
+71	alpine	5	Alpine Pass
+72	forest	7	Mosswood
+73	savanna	6	Dusty Expanse
+74	ruins	2	Forgotten Vault
+75	hot_spring	7	Sulfur Pools
+76	swamp	1	Willow Marsh
+77	ocean	4	Coral Shelf
+78	desert	12	Sunken Sands
+79	alpine	9	Snowcap Ridge
+80	desert	8	Salt Flats
+81	oil_field	11	Crude Basin
+82	lake	9	Reedwater
+83	oil_field	11	Seepage Fields
+84	swamp	1	Sinking Fen
+85	lake	7	Deepglass Lake
+86	meadow	1	Bluebell Downs
+87	swamp	6	Blackwater Mire
+88	desert	8	Amber Dunes
+89	meadow	11	Dewdrop Meadow
+90	jungle	1	Vinewild
+91	lake	4	Moonlit Lake
+92	meadow	11	Clover Fields
+93	corruption	5	Twisted Reach
+94	oil_field	5	Oil Field 44
+95	hot_spring	3	Thermal Hollow
+96	corruption	6	Blighted Hollow
+97	hot_spring	5	Steamfall Basin
+98	corruption	8	Sickened Vale
+99	jungle	8	Jaguar Basin
+100	anomaly	9	Fracture Zone

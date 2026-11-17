@@ -452,3 +452,29 @@ INNER JOIN Manufacturer
 GROUP BY ItemTransPower.manufacturer_key
 ORDER BY PowerUse DESC, Manufactuerer
 ;
+
+
+/*
+-- ----------------------------------------------------------------------------
+-- Statement 30: 
+-- Explanation: Get All Manufacturers with a total revenue between the lowest 0.25
+-- and highest 0.25 percentage of the average total market (market value) revenue
+-- ----------------------------------------------------------------------------
+WITH AvgMarketSaleValue AS (
+    SELECT AVG(Market.amnt_bought * Item.market_value) AS val
+    FROM Market
+    INNER JOIN Item ON Item.item_id = Market.item_id
+    
+), ManufMarket AS ( -- Manuf-Value they sold item tuples
+    SELECT Manufacturer.name, SUM(Market.amnt_bought * Market.value) AS TotalRev
+    FROM Market
+    INNER JOIN Manufacturer ON Manufacturer.manufacturer_key = Market.manufacturer_key
+    GROUP BY Manufacturer.manufacturer_key
+)
+
+-- Manufacturers that make less than 0.5 of Avg
+SELECT *
+FROM ManufMarket, AvgMarketSaleValue
+WHERE ManufMarket.TotalRev < (0.5 * AvgMarketSaleValue.val);
+
+*/

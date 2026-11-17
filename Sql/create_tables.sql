@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS Item(
     state varchar(8), -- solid, liquid, gas, plasma
     description varchar(200),
     tier int, -- 0(Raw Resource)-5(Final Advanced Products)
-    market_value NOT NULL, -- Base Price that a Buyer would pay for this item
+    market_value double NOT NULL, -- Base Price that a Buyer would pay for this item
     quantity float DEFAULT 0.0 -- stored quantity of this item
 );
 

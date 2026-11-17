@@ -21,6 +21,9 @@
 -- 5. Deposit received a Unique constraint between deposit_id and biome_id
 -- 6. Constructor and Extractor recieved power_consumption (float) attribute
 -- 7. Extraction and Production relations lost amnt_per_cycle (float) attribute due to redundancy
+-- 8. Item relation recieved a market_value (double) attribute
+-- 9. Buyer relation recieved a wealth (int) attribute
+-- 10. Manufacturer relation received a reputation (int) attribute
 -- ============================================================================
 
 -- ============================================================================

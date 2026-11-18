@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b17ob7ryio6fe"]
+
+[node name="MainMenu" type="Node" unique_id=827807605]
+
+[node name="TitleScreen" type="Control" parent="." unique_id=569719386]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TitleScreen" unique_id=101358183]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 188.0
+bbcode_enabled = true
+text = "[rainbow]Manufactorio[/rainbow]"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UI" type="Control" parent="." unique_id=1506160606]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

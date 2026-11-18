@@ -73,8 +73,8 @@
 PRAGMA foreign_keys = ON;
 
 -- Set output format for readability during evaluation
---.headers on
---.mode column
+.headers on
+.mode column
 
 
 -- ============================================================================
